@@ -1,13 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom";
-
-import HomeScreen from "./app/screens/Home";
-
+import { BrowserRouter as Router } from 'react-router-dom';
+import Header from './app/components/Header';
+import Routes from './app/routes/Routes';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "./theme.css";
 
 ReactDOM.render(
   <React.StrictMode>
-    <HomeScreen />
+    <Router>
+      <div>
+        <Header />
+        <Routes />
+      </div>
+    </Router>
   </React.StrictMode>,
-  document.getElementById("root"),
+  document.getElementById("app"),
 );

@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "start": "node ./packages/server/src/app.ts",
     "bootstrap": "lerna bootstrap",
     "dev": "lerna run dev --parallel --stream"
   },
